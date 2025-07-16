@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thale Noi Traditional Hand Craft - Authentic Southern Thailand Crafts</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.glass-effect {
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.floating-element {
+animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+0%, 100% { transform: translateY(0px); }
+50% { transform: translateY(-10px); }
+}
+.hero-bg {
+background-image: url('https://readdy.ai/api/search-image?query=Traditional%20Thai%20handicrafts%20workshop%20with%20skilled%20artisan%20hands%20weaving%20bamboo%20baskets%20and%20creating%20beautiful%20handmade%20items%2C%20warm%20natural%20lighting%2C%20authentic%20southern%20Thailand%20atmosphere%2C%20clean%20white%20background%20on%20left%20side%20for%20text%20overlay%2C%20peaceful%20and%20inviting%20workspace&width=1920&height=1080&seq=hero001&orientation=landscape');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+</style>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#8B4513',
+secondary: '#D2691E'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+</head>
+<body class="bg-gradient-to-br from-amber-50 to-orange-50 min-h-screen">
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 right-0 z-50 glass-effect">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<!-- Logo -->
+<div class="flex items-center">
+<span class="text-2xl font-['Pacifico'] text-primary">Thale Noi</span>
+</div>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center space-x-8">
+<a href="#home" class="text-gray-800 hover:text-primary transition-colors text-lg font-medium">Home</a>
+<a href="#products" class="text-gray-800 hover:text-primary transition-colors text-lg font-medium">Products</a>
+<a href="#about" class="text-gray-800 hover:text-primary transition-colors text-lg font-medium">About</a>
+<a href="#contact" class="text-gray-800 hover:text-primary transition-colors text-lg font-medium">Contact</a>
+</div>
+<!-- Desktop Actions -->
+<div class="hidden md:flex items-center space-x-4">
+<div class="relative">
+<input type="text" placeholder="Search crafts..." class="pl-10 pr-4 py-2 rounded-lg border-none bg-white/20 backdrop-blur-sm text-sm focus:outline-none focus:ring-2 focus:ring-primary/50">
+<div class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 flex items-center justify-center">
+<i class="ri-search-line text-gray-500"></i>
+</div>
+</div>
+<button class="relative w-10 h-10 flex items-center justify-center">
+<i class="ri-shopping-cart-line text-gray-700 hover:text-primary transition-colors"></i>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+</button>
+<button class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Sign In</button>
+</div>
+<!-- Mobile Menu Button -->
+<button id="mobile-menu-btn" class="md:hidden w-8 h-8 flex items-center justify-center">
+<i class="ri-menu-line text-gray-700"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="md:hidden hidden glass-effect border-t border-white/20">
+<div class="px-4 py-4 space-y-4">
+<div class="relative">
+<input type="text" placeholder="Search crafts..." class="w-full pl-10 pr-4 py-2 rounded-lg border-none bg-white/20 backdrop-blur-sm text-sm focus:outline-none focus:ring-2 focus:ring-primary/50">
+<div class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 flex items-center justify-center">
+<i class="ri-search-line text-gray-500"></i>
+</div>
+</div>
+<a href="#home" class="block text-gray-700 hover:text-primary transition-colors py-2">Home</a>
+<a href="#products" class="block text-gray-700 hover:text-primary transition-colors py-2">Products</a>
+<a href="#about" class="block text-gray-700 hover:text-primary transition-colors py-2">About</a>
+<a href="#contact" class="block text-gray-700 hover:text-primary transition-colors py-2">Contact</a>
+<div class="flex items-center justify-between pt-4 border-t border-white/20">
+<button class="relative w-10 h-10 flex items-center justify-center">
+<i class="ri-shopping-cart-line text-gray-700"></i>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+</button>
+<button class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Sign In</button>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section id="home" class="hero-bg min-h-screen flex items-center pt-16">
+<div class="w-full">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+<div class="space-y-8 bg-white/90 p-8 rounded-2xl backdrop-blur-sm">
+<div class="floating-element">
+<h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+Authentic <span class="text-primary">Thai Crafts</span> from Southern Thailand
+</h1>
+</div>
+<p class="text-lg md:text-xl text-gray-800 leading-relaxed">
+Discover the timeless beauty of traditional handcrafted items from Phatthalung province. Each piece tells a story of heritage, skill, and cultural pride passed down through generations.
+</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-white px-8 py-4 !rounded-button hover:bg-primary/90 transition-all transform hover:scale-105 whitespace-nowrap text-lg">
+Explore Collection
+</button>
+<button class="glass-effect text-gray-800 px-8 py-4 !rounded-button hover:bg-white/30 transition-all whitespace-nowrap text-lg">
+Learn Our Story
+</button>
+</div>
+<div class="glass-effect p-6 rounded-xl bg-white/80">
+<p class="text-base text-gray-700 mb-2">Special Offer for New Customers</p>
+<p class="text-xl font-semibold text-primary">Register now and get 15% discount on your first order!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Categories -->
+<section id="products" class="py-20 bg-white/50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Collections</h2>
+<p class="text-lg text-gray-600 max-w-2xl mx-auto">Explore our carefully curated collections of traditional Thai handicrafts, each piece representing the finest craftsmanship from Southern Thailand.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Collectors Edition -->
+<div class="glass-effect p-6 rounded-2xl hover:transform hover:scale-105 transition-all duration-300 floating-element">
+<div class="mb-6">
+<img src="https://readdy.ai/api/search-image?query=Exquisite%20traditional%20Thai%20bamboo%20weaving%20collector%20item%20with%20intricate%20patterns%2C%20museum%20quality%20craftsmanship%2C%20golden%20hour%20lighting%2C%20pristine%20white%20background%2C%20premium%20handmade%20artifact%20showcasing%20southern%20Thailand%20heritage&width=400&height=300&seq=collect001&orientation=landscape" alt="Collectors Edition" class="w-full h-48 object-cover object-top rounded-lg">
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Collectors Edition</h3>
+<p class="text-gray-600 mb-4">Rare and exclusive pieces for serious collectors. Limited availability.</p>
+<div class="flex items-center justify-between">
+<span class="text-lg font-semibold text-primary">From ฿2,500</span>
+<button class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">View All</button>
+</div>
+</div>
+<!-- Best Sellers -->
+<div class="glass-effect p-6 rounded-2xl hover:transform hover:scale-105 transition-all duration-300 floating-element" style="animation-delay: 0.5s;">
+<div class="mb-6">
+<img src="https://readdy.ai/api/search-image?query=Popular%20traditional%20Thai%20handicrafts%20bestseller%20items%20including%20woven%20baskets%20and%20decorative%20pieces%2C%20warm%20natural%20lighting%2C%20clean%20white%20background%2C%20authentic%20southern%20Thailand%20craftsmanship%2C%20customer%20favorite%20products&width=400&height=300&seq=bestsell001&orientation=landscape" alt="Best Sellers" class="w-full h-48 object-cover object-top rounded-lg">
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Best Sellers</h3>
+<p class="text-gray-600 mb-4">Our most popular items loved by customers worldwide.</p>
+<div class="flex items-center justify-between">
+<span class="text-lg font-semibold text-primary">From ฿800</span>
+<button class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">View All</button>
+</div>
+</div>
+<!-- Limited Edition -->
+<div class="glass-effect p-6 rounded-2xl hover:transform hover:scale-105 transition-all duration-300 floating-element" style="animation-delay: 1s;">
+<div class="mb-6">
+<img src="https://static.readdy.ai/image/d6199b6d3bf70e4ab84eb7dfe97dce41/32234699ac3a0debc7cdfe2edd62f6c3.jfif" alt="Limited Edition" class="w-full h-48 object-cover object-top rounded-lg">
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Limited Edition</h3>
+<p class="text-gray-600 mb-4">Special releases with unique designs and premium materials.</p>
+<div class="flex items-center justify-between">
+<span class="text-lg font-semibold text-primary">From ฿1,800</span>
+<button class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">View All</button>
+</div>
+</div>
+<!-- Traditional Crafts -->
+<div class="glass-effect p-6 rounded-2xl hover:transform hover:scale-105 transition-all duration-300 floating-element" style="animation-delay: 1.5s;">
+<div class="mb-6">
+<img src="https://readdy.ai/api/search-image?query=Classic%20traditional%20Thai%20handicrafts%20including%20bamboo%20items%20and%20woven%20goods%2C%20authentic%20craftsmanship%2C%20natural%20lighting%2C%20clean%20white%20background%2C%20southern%20Thailand%20cultural%20heritage%20pieces%2C%20everyday%20functional%20art&width=400&height=300&seq=traditional001&orientation=landscape" alt="Traditional Crafts" class="w-full h-48 object-cover object-top rounded-lg">
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Traditional Crafts</h3>
+<p class="text-gray-600 mb-4">Authentic everyday items preserving our cultural heritage.</p>
+<div class="flex items-center justify-between">
+<span class="text-lg font-semibold text-primary">From ฿450</span>
+<button class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">View All</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Payment Methods -->
+<section class="py-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Convenient Payment Options</h2>
+<p class="text-lg text-gray-600">Choose from multiple secure payment methods for your convenience</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<!-- Mobile Banking -->
+<div class="glass-effect p-8 rounded-2xl">
+<div class="flex items-center mb-6">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mr-4">
+<i class="ri-smartphone-line text-primary text-xl"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900">Mobile Banking</h3>
+</div>
+<p class="text-gray-600 mb-6">Pay instantly using your preferred mobile banking app</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center p-4 bg-white/50 rounded-lg">
+<div class="w-8 h-8 flex items-center justify-center mr-3">
+<img src="https://static.readdy.ai/image/d6199b6d3bf70e4ab84eb7dfe97dce41/3be0ae62fae8ae4f859f773a22f4fa8f.jfif" alt="SCB Bank" class="w-full h-full object-contain">
+</div>
+<span class="font-medium">SCB Bank</span>
+</div>
+<div class="flex items-center p-4 bg-white/50 rounded-lg">
+<div class="w-8 h-8 flex items-center justify-center mr-3">
+<img src="https://static.readdy.ai/image/d6199b6d3bf70e4ab84eb7dfe97dce41/e1f6503d346ade62caee411e229a70ba.jfif" alt="Bangkok Bank" class="w-full h-full object-contain">
+</div>
+<span class="font-medium">Bangkok Bank</span>
+</div>
+<div class="flex items-center p-4 bg-white/50 rounded-lg">
+<div class="w-8 h-8 flex items-center justify-center mr-3">
+<img src="https://static.readdy.ai/image/d6199b6d3bf70e4ab84eb7dfe97dce41/a0b537034ffa39865554552f3352d367.jfif" alt="K Plus" class="w-full h-full object-contain">
+</div>
+<span class="font-medium">K Plus</span>
+</div>
+<div class="flex items-center p-4 bg-white/50 rounded-lg">
+<div class="w-8 h-8 flex items-center justify-center mr-3">
+<img src="https://static.readdy.ai/image/d6199b6d3bf70e4ab84eb7dfe97dce41/ae01151a39699b014470d639e413eabb.jfif" alt="Krungsri Bank" class="w-full h-full object-contain">
+</div>
+<span class="font-medium">Krungsri</span>
+</div>
+</div>
+</div>
+<!-- Cash on Delivery -->
+<div class="glass-effect p-8 rounded-2xl">
+<div class="flex items-center mb-6">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-lg mr-4">
+<i class="ri-truck-line text-secondary text-xl"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900">Cash on Delivery</h3>
+</div>
+<p class="text-gray-600 mb-6">Pay when you receive your order at your doorstep</p>
+<div class="space-y-4">
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-check-line text-green-500"></i>
+</div>
+<span>Available nationwide</span>
+</div>
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-check-line text-green-500"></i>
+</div>
+<span>No additional fees</span>
+</div>
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center mr-3">
+<i class="ri-check-line text-green-500"></i>
+</div>
+<span>Secure and reliable</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section id="about" class="py-20 bg-white/50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Preserving Heritage Through Craft</h2>
+<p class="text-lg text-gray-600 mb-6">
+Located in the beautiful Phatthalung province of Southern Thailand, Thale Noi Traditional Hand Craft has been preserving and promoting authentic Thai handicrafts for over three decades. Our artisans use time-honored techniques passed down through generations.
+</p>
+<p class="text-lg text-gray-600 mb-8">
+Each piece in our collection represents not just exceptional craftsmanship, but also the rich cultural heritage of Southern Thailand. From intricate bamboo weaving to traditional textile work, every item tells a story of our ancestors' wisdom and skill.
+</p>
+<button class="bg-primary text-white px-8 py-4 !rounded-button hover:bg-primary/90 transition-all transform hover:scale-105 whitespace-nowrap">
+Learn More About Us
+</button>
+</div>
+<div class="floating-element">
+<img src="https://readdy.ai/api/search-image?query=Traditional%20Thai%20artisan%20workshop%20in%20southern%20Thailand%20Phatthalung%20province%2C%20skilled%20craftspeople%20working%20on%20bamboo%20weaving%20and%20handicrafts%2C%20authentic%20cultural%20atmosphere%2C%20natural%20lighting%2C%20peaceful%20workspace%20showcasing%20heritage%20craftsmanship&width=600&height=500&seq=about001&orientation=landscape" alt="Our Workshop" class="w-full h-96 object-cover object-top rounded-2xl shadow-lg">
+</div>
+</div>
+</div>
+</section>
+<!-- Registration Discount -->
+<section class="py-20">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<div class="glass-effect p-12 rounded-3xl">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-6">
+<i class="ri-gift-line text-primary text-2xl"></i>
+</div>
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Welcome Bonus</h2>
+<p class="text-lg text-gray-600 mb-8">Join our community of craft enthusiasts and receive an exclusive discount on your first purchase</p>
+<div class="bg-gradient-to-r from-primary to-secondary text-white p-6 rounded-2xl mb-8">
+<p class="text-2xl font-bold mb-2">15% OFF</p>
+<p class="text-lg">Your First Order</p>
+</div>
+<button id="register-btn" class="bg-primary text-white px-8 py-4 !rounded-button hover:bg-primary/90 transition-all transform hover:scale-105 whitespace-nowrap">
+Register Now
+</button>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-white/50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Visit Our Workshop</h2>
+<p class="text-lg text-gray-600">Experience the craftsmanship firsthand at our location in Phatthalung province</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div class="glass-effect p-8 rounded-2xl">
+<h3 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+<div class="space-y-4">
+<div class="flex items-center">
+<div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-lg mr-4">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<div>
+<p class="font-medium">Address</p>
+<p class="text-gray-600">123 Traditional Craft Street, Phatthalung 93000, Thailand</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-lg mr-4">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<div>
+<p class="font-medium">Phone</p>
+<p class="text-gray-600">+66 74 123 4567</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-lg mr-4">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<div>
+<p class="font-medium">Email</p>
+<p class="text-gray-600">info@thalenoi-crafts.com</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-lg mr-4">
+<i class="ri-time-line text-primary"></i>
+</div>
+<div>
+<p class="font-medium">Hours</p>
+<p class="text-gray-600">Mon - Sat: 9:00 AM - 6:00 PM</p>
+</div>
+</div>
+</div>
+</div>
+<div class="glass-effect p-8 rounded-2xl">
+<h3 class="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
+<form class="space-y-4">
+<div>
+<input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg border-none bg-white/50 focus:outline-none focus:ring-2 focus:ring-primary/50">
+</div>
+<div>
+<input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-lg border-none bg-white/50 focus:outline-none focus:ring-2 focus:ring-primary/50">
+</div>
+<div>
+<textarea placeholder="Your Message" rows="4" class="w-full px-4 py-3 rounded-lg border-none bg-white/50 focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none"></textarea>
+</div>
+<button type="submit" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Send Message
+</button>
+</form>
+</div>
+</div>
+<!-- Map -->
+<div class="mt-12">
+<div class="glass-effect p-4 rounded-2xl">
+<div class="w-full h-64 md:h-96 rounded-lg overflow-hidden" style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png'); background-size: cover; background-position: center;"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div>
+<span class="text-2xl font-['Pacifico'] text-primary mb-4 block">Thale Noi</span>
+<p class="text-gray-400 mb-4">Preserving the beauty of traditional Thai handicrafts from Southern Thailand.</p>
+<div class="flex space-x-4">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-facebook-fill text-gray-400 hover:text-white transition-colors cursor-pointer"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-instagram-line text-gray-400 hover:text-white transition-colors cursor-pointer"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-line-fill text-gray-400 hover:text-white transition-colors cursor-pointer"></i>
+</div>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+<li><a href="#products" class="text-gray-400 hover:text-white transition-colors">Products</a></li>
+<li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+<li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Collections</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Collectors Edition</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Best Sellers</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Limited Edition</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Traditional Crafts</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+<p class="text-gray-400 mb-4">Subscribe to get updates on new collections and special offers.</p>
+<div class="flex gap-2">
+<input type="email" placeholder="Your email" class="flex-1 px-3 py-2 rounded-lg border-none bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-primary/50">
+<button class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Subscribe</button>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 text-center">
+<p class="text-gray-400">&copy; 2024 Thale Noi Traditional Hand Craft. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Registration Modal -->
+<div id="registration-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+<div class="glass-effect max-w-md w-full p-8 rounded-2xl">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-2xl font-bold text-gray-900">Create Account</h3>
+<button id="close-modal" class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded-full transition-colors">
+<i class="ri-close-line text-gray-600"></i>
+</button>
+</div>
+<form class="space-y-4">
+<div>
+<input type="text" placeholder="Full Name" class="w-full px-4 py-3 rounded-lg border-none bg-white/50 focus:outline-none focus:ring-2 focus:ring-primary/50">
+</div>
+<div>
+<input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-lg border-none bg-white/50 focus:outline-none focus:ring-2 focus:ring-primary/50">
+</div>
+<div>
+<input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 rounded-lg border-none bg-white/50 focus:outline-none focus:ring-2 focus:ring-primary/50">
+</div>
+<div>
+<input type="password" placeholder="Password" class="w-full px-4 py-3 rounded-lg border-none bg-white/50 focus:outline-none focus:ring-2 focus:ring-primary/50">
+</div>
+<div class="bg-gradient-to-r from-primary to-secondary text-white p-4 rounded-lg text-center">
+<p class="font-semibold">🎉 Welcome Bonus: 15% OFF your first order!</p>
+</div>
+<button type="submit" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Create Account & Get Discount
+</button>
+</form>
+</div>
+</div>
+<script id="mobile-menu-script">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuBtn.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+});
+});
+</script>
+<script id="modal-script">
+document.addEventListener('DOMContentLoaded', function() {
+const registerBtn = document.getElementById('register-btn');
+const modal = document.getElementById('registration-modal');
+const closeModal = document.getElementById('close-modal');
+registerBtn.addEventListener('click', function() {
+modal.classList.remove('hidden');
+});
+closeModal.addEventListener('click', function() {
+modal.classList.add('hidden');
+});
+modal.addEventListener('click', function(e) {
+if (e.target === modal) {
+modal.classList.add('hidden');
+}
+});
+});
+</script>
+<script id="smooth-scroll-script">
+document.addEventListener('DOMContentLoaded', function() {
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href').substring(1);
+const targetElement = document.getElementById(targetId);
+if (targetElement) {
+const offsetTop = targetElement.offsetTop - 80;
+window.scrollTo({
+top: offsetTop,
+behavior: 'smooth'
+});
+}
+});
+});
+});
+</script>
+</body>
+</html>
